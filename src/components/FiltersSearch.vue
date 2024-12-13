@@ -64,7 +64,7 @@
         outlined
         @click="emit('search')"
         :style="`height: ${sizeOfInput}px`"
-        :disable="filtersIsEmpy"
+        :disable="filtersIsEmpty"
       />
       <q-btn
         label="Enregistrer la recherche"
@@ -100,7 +100,7 @@ const emit = defineEmits(['search', 'reset'])
 const { form } = toRefs(props)
 
 const isAuthenticated = computed(() => authenticateStore.isAuthenticated)
-const filtersIsEmpy = computed(() => {
+const filtersIsEmpty = computed(() => {
   return Object.values(form.value).every((value) => value === null)
 })
 
@@ -124,7 +124,6 @@ const resetForm = () => {
 }
 
 onMounted(() => {
-  console.log('mounted', form.value)
   const size = document.querySelector('.input-search')
   sizeOfInput.value = size.offsetHeight
   if (route.params.search) {
