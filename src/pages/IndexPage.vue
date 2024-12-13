@@ -52,6 +52,7 @@ import CardAccommodation from 'components/CardAccommodation.vue'
 import { useMeta } from 'quasar'
 
 const searchStore = useSearchStore()
+const image = '../public/assets/background.webp'
 
 const { t } = useI18n()
 const router = useRouter()
@@ -59,7 +60,7 @@ const router = useRouter()
 const accommodations = computed(() => searchStore.accommodations)
 const headerIndex = computed(() => ({
   height: '500px',
-  backgroundImage: 'url(/src/assets/background.webp)',
+  backgroundImage: `url(${image})`,
   backgroundPosition: 'center',
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
