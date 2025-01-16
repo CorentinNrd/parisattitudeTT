@@ -28,7 +28,7 @@ Accès à la page de recherche :
 
 - Problème : L'utilisateur ne peut pas accéder à la page de recherche sans saisir un quartier.
 
-- Attendu : Permettre l'accès à la page de recherche même sans quartier, mais afficher un message d'information ou une interface appropriée.
+- Attendu : Permettre l'accès à la page de recherche même sans quartier.
 
 Affichage des biens dans la recherche :
 
