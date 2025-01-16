@@ -1,18 +1,8 @@
-# Quasar App (parisattitudett)
+# Test technique Paris Attitude
 
-Test technique Paris Attitude
+## Attention le projet doit être rendu sur un repo GitHub.
 
-## Install the dependencies
-```bash
-yarn
-# or
-npm install
-```
-
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
-```bash
-quasar dev
-```
+### Aucun fichier Zip ne sera accepté. Nous attendons que vous nous envoyez votre lien par email.
 
 -------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -28,7 +18,7 @@ Accès à la page de recherche :
 
 - Problème : L'utilisateur ne peut pas accéder à la page de recherche sans saisir un quartier.
 
-- Attendu : Permettre l'accès à la page de recherche même sans quartier.
+- Attendu : Permettre l'accès à la page de recherche sans quartier.
 
 Affichage des biens dans la recherche :
 
@@ -36,23 +26,29 @@ Affichage des biens dans la recherche :
 
 - Attendu : Lorsque aucun quartier n'est sélectionné, afficher l'ensemble des biens.
 
-Accès à la page "Favorites" sans connexion :
+Connexion avec mot de passe :
 
-- Problème : L'utilisateur peut accéder à la page des favoris via l'URL sans être connecté.
+- Problème : Impossible de se connecter avec un mot de passe correct.
 
-- Attendu : Bloquer l'accès à cette page si l'utilisateur n'est pas connecté et rediriger vers la page de connexion.
-
-Modal de connexion sur la page "Favorites" :
-
-- Problème : Même connecté, cliquer sur "Favoris" affiche la modal de connexion.
-
-- Attendu : Supprimer l'ouverture de la modal si l'utilisateur est déjà connecté.
+- Attendu : Corriger la logique d'authentification pour valider les identifiants corrects.
 
 Connexion persistante :
 
 - Problème : Après connexion, l'utilisateur est déconnecté en actualisant la page.
 
 - Attendu : Assurer une persistance de la connexion après actualisation.
+
+Accès à la page "Favorites" sans connexion :
+
+- Problème : L'utilisateur peut accéder à la page des favoris via l'URL sans être connecté.
+
+- Attendu : Bloquer l'accès à cette page si l'utilisateur n'est pas connecté.
+
+Modal de connexion sur la page "Favorites" :
+
+- Problème : Même connecté, cliquer sur "Favoris" affiche la modal de connexion.
+
+- Attendu : Supprimer l'ouverture de la modal si l'utilisateur est déjà connecté.
 
 Filtres de loyer :
 
@@ -64,7 +60,7 @@ Enregistrement de recherche :
 
 - Problème : Rien ne se passe lorsqu'un utilisateur connecté clique sur "Enregistrer ma recherche".
 
-- Attendu : Implémenter la fonctionnalité d'enregistrement de recherche avec une confirmation visuelle.
+- Attendu : Vérifier que la fonctionnalité est bien implémentée.
 
 Suppression de favoris :
 
@@ -72,17 +68,11 @@ Suppression de favoris :
 
 - Attendu : Corriger la fonctionnalité de suppression des favoris.
 
-Connexion avec mot de passe :
-
-- Problème : Impossible de se connecter avec un mot de passe correct.
-
-- Attendu : Corriger la logique d'authentification pour valider les identifiants corrects.
-
 Suppression des recherches enregistrées :
 
 - Problème : Le bouton de suppression des recherches enregistrées est manquant.
 
-- Attendu : Ajouter un bouton pour permettre cette suppression et s'assurer que la méthode backend existante soit appelée correctement.
+- Attendu : Ajouter un bouton pour permettre cette suppression et s'assurer que la méthode backend existante soit appelée correctement et qu'elle fonctionne bien.
 
 Titre de l’onglet sur la page de recherche :
 
@@ -109,7 +99,5 @@ Documentez vos changements.
 Une version corrigée de l'application.
 
 Un rapport ou des commentaires expliquant les solutions appliquées.
-
-Un ensemble de tests permettant de valider vos corrections.
 
 Bonne chance !
