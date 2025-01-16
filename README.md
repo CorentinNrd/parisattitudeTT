@@ -34,7 +34,7 @@ Affichage des biens dans la recherche :
 
 - Problème : Aucun bien n'est visible si aucun quartier n'est sélectionné.
 
-- Attendu : Lorsque aucun quartier n'est sélectionné, afficher un message d'information ou une liste par défaut des biens disponibles.
+- Attendu : Lorsque aucun quartier n'est sélectionné, afficher l'ensemble des biens.
 
 Accès à la page "Favorites" sans connexion :
 
